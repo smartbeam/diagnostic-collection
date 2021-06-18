@@ -268,7 +268,7 @@ function detect_install {
     elif [ "$TYPE" == "coss" ]; then
         IS_COSS="true"
         # COSS package install
-        if [ -z "$ROOT_DIR" ] && [ -d "/etc/cassandra" ] ]; then
+        if [ -z "$ROOT_DIR" ] && [ -d "/etc/cassandra" ]; then
             IS_PACKAGE="true"
             ROOT_DIR="/etc/cassandra"
             debug "COSS install: package directories successfully found. Proceeding..."
