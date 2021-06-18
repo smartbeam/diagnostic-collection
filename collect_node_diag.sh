@@ -237,7 +237,7 @@ function set_paths {
         if [ -n "$IS_TARBALL" ]; then
             BIN_DIR="$ROOT_DIR/bin"
         elif [ -n "$IS_PACKAGE" ]; then
-            BIN_DIR=/usr/bin
+            BIN_DIR=/opt/cassandra/bin
         fi
     fi
 
